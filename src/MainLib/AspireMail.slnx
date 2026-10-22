@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="AspireMail.ApiClient/AspireMail.ApiClient.csproj" Id="4dab0cf8-e72e-479b-a780-777c5d8aecab" />
+  <Project Path="AspireMail.ApiService/AspireMail.ApiService.csproj" />
+  <Project Path="AspireMail.AppHost/AspireMail.AppHost.csproj" />
+  <Project Path="AspireMail.ServiceDefaults/AspireMail.ServiceDefaults.csproj" />
+  <Project Path="AspireMail.WebApp/AspireMail.WebApp.csproj" Id="fc6252f8-c90f-4764-af38-1ba786ddb42f" />
+  <Project Path="Marqdouj.DotNet.Aspire.MailDev/Marqdouj.DotNet.Aspire.MailDev.csproj" Id="986e858f-d582-410f-a188-730bde73a4ed" />
+  <Project Path="Marqdouj.DotNet.Aspire.MailKit/Marqdouj.DotNet.Aspire.MailKit.csproj" Id="502038ba-db75-426c-9d82-1a16ef95c8d1" />
+</Solution>

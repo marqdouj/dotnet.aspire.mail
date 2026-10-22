@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireMail.ServiceDefaults\AspireMail.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Marqdouj.DotNet.Aspire.MailKit\Marqdouj.DotNet.Aspire.MailKit.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Marqdouj.DotNet.General" Version="10.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="11.0.0-rc.2.26504.105" />
+  </ItemGroup>
+
+</Project>

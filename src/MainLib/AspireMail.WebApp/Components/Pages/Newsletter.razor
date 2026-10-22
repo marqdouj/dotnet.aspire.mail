@@ -1,0 +1,35 @@
+﻿@page "/newsletter"
+@rendermode InteractiveServer
+
+<DemoPage Title="@title">
+    <SummaryContent>
+        <FluentText As="TextTag.Paragraph">
+            This page demonstrates subscribing/unsubscribing to a newsletter using 
+            <FluentLink Href="https://maildev.github.io/maildev/" Target="LinkTarget.Blank">MailDev</FluentLink>
+            and
+            <FluentLink Href="https://github.com/jstedfast/MailKit" Target="LinkTarget.Blank">MailKit</FluentLink>.
+            <br /><br />
+            Open the <code>'MailDev'</code> Aspire dashboard resource to view the emails.
+        </FluentText>
+    </SummaryContent>
+
+    <ChildContent>
+        <FluentCard>
+            <FluentText As="TextTag.H6">Email Service (Newsletter)<br /><br /></FluentText>
+            <FluentText As="TextTag.Paragraph">@subscribedMessage</FluentText>
+            <NewsletterButtons SubscribeChanged="@OnSubscribeChanged" />
+        </FluentCard>
+    </ChildContent>
+</DemoPage>
+
+@code {
+    private const string title = "Newsletter";
+    private bool subscribed;
+    private string subscribedMessage => subscribed ? "Thank you for subscribing to our newsletter." : "Please subscribe to our newsletter.";
+
+    private void OnSubscribeChanged(bool value)
+    {
+        subscribed = value;
+        StateHasChanged();
+    }
+}
